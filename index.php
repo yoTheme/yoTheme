@@ -27,6 +27,7 @@
                     }
                     ?></div>
                     <div class="alist-content"><?php the_content('阅读全文'); ?></div>
+                </div>
             </article>
             <?php endwhile; ?>
             <?php  if ( $wp_query->max_num_pages > 1 ) : ?>
