@@ -27,7 +27,10 @@
             <div class="post-comments"><?php comments_template(); ?></div>
         </div>
         <div class="article-meta">
-            <div class="article-meta-author"><a href="#"><img src="http://1.gravatar.com/avatar/9cd2c7fa764ff806c370667c97696e28?s=40&d=%3Cpath_to_url%3E&r=G" />yoUED</a></div>
+            <div class="article-meta-author">
+                <?php echo get_avatar($authordata->ID,'40');?>
+                <a href="<?php echo $authordata->user_url; ?>" title="<?php echo $authordata->display_name;?>"><?php echo $authordata->display_name;?></a>
+            </div>
             <div class="article-meta-info">发表于：<?php the_time('Y-m-d'); ?><br />分类：<?php the_category(', '); ?><br />标签：<?php the_tags(', '); ?><br />浏览：<?php setPostViews(get_the_ID()); ?><?php echo getPostViews(get_the_ID()); ?></div>
             <div class="article-meta-share">
                 <!-- Baidu Button BEGIN -->

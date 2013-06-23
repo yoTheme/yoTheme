@@ -18,7 +18,7 @@ table {border-collapse:collapse; border-spacing:0;}
 q:before, q:after, blockquote:before, blockquote:after {content:"";}
 ol, ul {list-style:none;}
 
-/* Import font */
+/* Import font 
 @font-face {
 font-family: "Segoe UI Light";
 src: local("Segoe UI Light"),
@@ -27,10 +27,11 @@ src: local("Segoe UI Light"),
      url(../fonts/SegoeUI-Light.ttf) format("truetype"),
      url(../fonts/SegoeUI-Light.eot);
 }  
+*/
 
 /* Global style */
 html{-webkit-text-size-adjust:none;}
-body {font:14px/22px "Segoe UI Light", "Helvetica Neue", Arial, "Microsoft Yahei"; color:#666;}
+body {font:14px/22px Helvetica, Arial, "Hiragino Sans GB", "Microsoft yahei", sans-serif; opacity:0.99; color:#666;}
 .clr {clear:both; overflow:hidden; height:0;}
 .w {width:1000px; margin:auto;}
 a {text-decoration:none; color:#333;}
@@ -60,8 +61,8 @@ a:hover {text-decoration:none; color:#000;}
 .sk-focus {background-position:-10px -73px;}
 .sb-focus {background-position:-205px -73px;}
 .nav {float:left; margin:11px 0 0 15px;}
-.nav li {float:left; cursor:pointer; line-height:26px; height:27px; padding:0 12px; position:relative; margin-right:10px;}
-.nav li a {color:white;}
+.nav li {float:left; cursor:pointer; line-height:30px; height:27px; padding:0 12px; position:relative; margin-right:10px;}
+.nav li a {color:#DDD; font-size:13px;}
 .nav-li-hover {background-position:-10px -404px;}
 .nav li ul {display:none; position:absolute;}
 .social {float:right; padding:13px 0 0 0; overflow:hidden;}
@@ -97,12 +98,12 @@ a:hover {text-decoration:none; color:#000;}
 .alist {overflow:hidden; zoom:1; margin-bottom:20px;}
 .al-hover .alist-time,.al-hover .alist-container {background:#F2F2F2;}
 .alist-time {background:#F9F9F9; width:130px; float:left; text-align:center; padding:20px 0;}
-.alist-year {font-size:18px; display:block; margin-bottom:5px;}
+.alist-year {font-size:18px; display:block; margin-bottom:18px;}
 .alist-date {font-size:40px;}
 .alist-container {margin-left:150px; background:#F9F9F9; padding:25px;}
 .alist-title {font-size:24px; line-height:30px;}
 .alist-meta {font-size:12px; color:#999; margin-top:10px;}
-.alist-content {margin-top:20px; line-height:24px;}
+.alist-content {margin-top:20px; line-height:28px;}
 .pagenavi {height:30px; font-size:18px; text-align:center; padding-top:20px;}
 .pagenavi a,.pagenavi span {margin-right:5px;}
 .pagenavi .current {padding:3px 12px; background:#999; color:white;}
@@ -130,6 +131,8 @@ a:hover {text-decoration:none; color:#000;}
 #post {overflow:hidden; zoom:1; width:780px;}
 .page-title {font-size:28px; line-height:33px; color:black;}
 .post-content {overflow:hidden; zoom:1; line-height:28px;}
+.post-content a,.alist-content a {color:#DB27A7;}
+.post-content a:hover,.alist-content a:hover {color:#333;}
 .post-pagenavi {background:#F9F9F9; color:#999; font-size:12px; padding:5px 12px; overflow:hidden; zoom:1; margin:20px 0;}
 .post-pagenavi span {float:right;}
 .article-meta {background:#F9F9F9; padding:15px; width:170px; position:absolute; z-index:5; top:0; right:0;}
@@ -144,6 +147,18 @@ a:hover {text-decoration:none; color:#000;}
 .more-link:hover {background-position:-328px -86px;}
 .more-link:active {background-position:-406px -86px;}
 
+/* Content style */
+.alist-content p,.post-content p {padding-bottom:20px;}
+.alist-content ol,.post-content ol {list-style:decimal; margin-left:50px; padding-bottom:20px;}
+.alist-content table,.post-content table {border-collapse:collapse; border-spacing:0; width:100%; border-left:1px solid #CCC; border-top:1px solid #CCC;}
+.alist-content td,.post-content td {padding:5px; border-bottom:1px solid #CCC; border-right:1px solid #CCC; background:#FFF;}
+.alist-content hr,.post-content hr {margin:10px 0; height:1px; border:none; border-top:1px dotted #AAA;}
+.alist-content h1,.post-content h1 {font-size:180%;}
+.alist-content h2,.post-content h2 {font-size:160%;}
+.alist-content h3,.post-content h3 {font-size:140%;}
+.alist-content h4,.post-content h4 {font-size:120%;}
+.alist-content h5,.post-content h5 {font-size:100%;}
+.alist-content h6,.post-content h6 {font-size:80%;}
 
 /* Footer style */
 #footer {background:#EEE; margin-top:40px; height:76px; line-height:76px; width:100%; font-size:18px;}

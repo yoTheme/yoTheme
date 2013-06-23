@@ -35,9 +35,11 @@ $(function() {
     var sideh = $("#sidebar").height();
     var posth = $("#post").height();
     var sideh = parseInt(sideh)+254;
-    if (sideh>posth) {
-        $("#container").css("height",sideh+"px");
-    }
+    /*if (posth) {
+        if (sideh>posth) {
+            $("#container").css("height",sideh+"px");
+        }
+    }*/
     //搜索框交互样式
     $(".sk,.sb").hover(function() {
         $(".sk").addClass("sk-hover");
@@ -48,17 +50,25 @@ $(function() {
     });
     $(".sk").focus(function() {
         var s = $(this);
+        var search = s.parent().parent(".search");
         s.addClass("sk-focus");
         $(".sb").addClass("sb-focus");
         s.animate({
             width: "185px"
         },300);
+        search.animate({
+            width: "225px"
+        },250);
     });
     $(".sk").blur(function() {
         var s = $(this);
+        var search = s.parent().parent(".search");
         s.animate({
             width: "104px"
         },200);
+        search.animate({
+            width: "144px"
+        },250);
         setTimeout("searchBoxBlur()", 250);
     });
     //菜单交互样式

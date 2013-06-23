@@ -49,6 +49,7 @@ $keywords = trim(strip_tags($keywords));
     <meta name="description" content="<?php echo $description; ?>" />
     <meta name="chinaz-site-verification" content="8e778d26-43c3-4135-8b50-117593310a2a" />
     <meta name="baidu-site-verification" content="KRnCGH6Bd9gixJWS" />
+    <meta name="apple-itunes-app" content="app-id=460979760"/> 
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" media="all" />
     <link rel="shortcut icon" type="image/x-icon" href="<?php bloginfo('url'); ?>/favicon.ico" />
     <link rel="alternate" type="application/rss+xml" title="RSS 2.0 - all posts" href="<?php if(get_option('yotheme_feed')) { echo get_option('yotheme_feed'); } else { bloginfo('rss2_url'); } ?>" />
@@ -62,7 +63,7 @@ $keywords = trim(strip_tags($keywords));
         <script src="<?php bloginfo('template_directory'); ?>/js/html5shiv.js" type="text/javascript"></script>
     <![endif]-->
     <!--[if IE 6]>
-        <script src="js/fuck-ie6.js"></script>
+        <script src="<?php bloginfo('template_directory'); ?>/js/fuck-ie6.js"></script>
     <![endif]-->
     <script type="text/javascript">
         var _gaq = _gaq || [];
