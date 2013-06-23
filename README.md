@@ -7,4 +7,4 @@ yoTheme v2的文件你可以在本页右侧下载。
 
 ###Demo
 
-http://youde.me/
+http://youed.me/
