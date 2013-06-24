@@ -57,7 +57,14 @@ $keywords = trim(strip_tags($keywords));
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
     <?php wp_get_archives('type=monthly&format=link'); ?>
     <?php wp_head(); ?>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="http://upcdn.b0.upaiyun.com/libs/jqueryui/jquery.ui-1.10.1.min.js"></script>
+    <script>
+    if (!window.jQuery) {
+        var script = document.createElement('script');
+        script.src = "<?php bloginfo('template_directory'); ?>/js/jquery-1.10.1.min.js";
+        document.body.appendChild(script);
+    }
+    </script>
     <script src="<?php bloginfo('template_directory'); ?>/js/yotheme.js"></script>
     <!--[if lte IE 9]>
         <script src="<?php bloginfo('template_directory'); ?>/js/html5shiv.js" type="text/javascript"></script>
