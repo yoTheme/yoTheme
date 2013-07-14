@@ -26,21 +26,7 @@
             </div>
             <div class="post-comments"><?php comments_template(); ?></div>
         </div>
-        <div class="article-meta">
-            <div class="article-meta-author"><a href="#"><img src="http://1.gravatar.com/avatar/9cd2c7fa764ff806c370667c97696e28?s=40&d=%3Cpath_to_url%3E&r=G" />yoUED</a></div>
-            <div class="article-meta-info">发表于：<?php the_time('Y-m-d'); ?><br />浏览：<?php setPostViews(get_the_ID()); ?><?php echo getPostViews(get_the_ID()); ?></div>
-            <div class="article-meta-share">
-                <!-- Baidu Button BEGIN -->
-                <div id="bdshare" class="bdshare_b" style="line-height: 12px;"><img src="http://bdimg.share.baidu.com/static/images/type-button-3.jpg" /></div>
-                <script type="text/javascript" id="bdshare_js" data="type=button&amp;mini=1&amp;uid=578942" ></script>
-                <script type="text/javascript" id="bdshell_js"></script>
-                <script type="text/javascript">
-                    document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + new Date().getHours();
-                </script>
-                <!-- Baidu Button END -->
-            </div>
-        </div>
-        <aside id="sidebar" class="post-sidebar">
+        <aside id="sidebar">
             <?php get_sidebar(); ?>
         </aside>
     </div>
