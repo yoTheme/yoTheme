@@ -37,10 +37,19 @@
             <?php endif; ?>
         </section>
         <?php else: ?>
-        <div class="err404">
-            <h3>哈哈，这儿啥也木有，回<a href="<?php echo home_url(); ?>" title="返回首页">首页</a>看看吧。</h3>
-            <p>404</p>
-        </div>
+        <div id="containter" class="w"><section id="page">
+            <article class="alist">
+                <div class="alist-time">
+                    <span class="alist-year">就是</span>
+                    <span class="alist-date">404</span>
+                </div>
+                <div class="alist-container">
+                    <div class="alist-content">
+                        <h3>哈哈，这儿啥也木有，回<a href="<?php echo home_url(); ?>" title="返回首页">首页</a>看看吧。</h3>
+                    </div>
+                </div>
+            </article>
+        </section></div>
         <?php endif; ?>
         <aside id="sidebar">
             <?php get_sidebar(); ?>
