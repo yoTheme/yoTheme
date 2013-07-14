@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<?php wp_head(); ?>
 <?php
 if (is_home() || is_page()) {
     $description = get_option('yotheme_ds');
@@ -40,7 +41,7 @@ $keywords = trim(strip_tags($keywords));
         bloginfo( 'name' );
         $site_description = get_bloginfo( 'description', 'display' );
         if ( $site_description && ( is_home() || is_front_page() ) )
-            echo " | $site_description";
+            // echo " | $site_description";
         if ( $paged >= 2 || $page >= 2 )
             echo ' | ' . sprintf( __( 'Page %s', 'yotheme'), max( $paged, $page ) );
     ?>
@@ -82,11 +83,12 @@ $keywords = trim(strip_tags($keywords));
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
     </script>
+
 </head>
 <body>
 <header id="header">
     <div class="w">
-        <h1 class="logo"><a href="<?php echo home_url(); ?>" title="<?php bloginfo('description'); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/yo_logo.png" alt="<?php bloginfo('name'); ?>" /></a></h1>
+        <h1 class="logo"><a href="<?php echo home_url(); ?>"><?php echo bloginfo( 'name' ); ?></a></h1>
         <div class="search">
             <?php get_search_form(); ?>
         </div>
@@ -95,8 +97,7 @@ $keywords = trim(strip_tags($keywords));
         </nav>
         <div class="social">
             <a href="javascript:;" class="collect" onclick="addFavorite(window.location,document.title);" title="把我加入收藏">收藏本站</a>
-            <a href="http://feed.youed.me/" target="_blank" class="rssfeed" title="订阅本站">订阅本站</a>
-            <a href="http://www.weibo.com/youed" class="weibo" title="访问我的微博">访问我的微博</a>
+            <a href="<?php echo home_url(); ?>/feed" target="_blank" class="rssfeed" title="订阅本站">订阅本站</a>
         </div>
         <br class="clr" />
     </div>

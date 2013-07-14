@@ -46,11 +46,14 @@ a:hover {text-decoration:none; color:#000;}
 .quote-left,
 .quote-right,
 .more-link,
+.read-more a,
 #sidebar h3 span {background-color:transparent; background-image:url(images/yo_imgs.png); background-repeat:no-repeat;}
 
 /* Header style */
-#header {background:#343434; width:100%; position:fixed; z-index:999; box-shadow:0 0 5px #666;}
-.logo {float:left; height:50px;}
+#header {background:#343434; width:100%; position:fixed; z-index:999; box-shadow:0 0 5px #666; }
+.logo {float:left; height:50px; }
+.logo a { color:white; line-height:50px; font-size:17px; }
+.logo a:hover { color:white; }
 .logo img {height:50px;}
 .search {float:left; margin:11px 0 0 5px; overflow:hidden;}
 .sk,.sb {border:none;}
@@ -60,7 +63,7 @@ a:hover {text-decoration:none; color:#000;}
 .sb-hover {background-position:-124px -41px;}
 .sk-focus {background-position:-10px -73px;}
 .sb-focus {background-position:-205px -73px;}
-.nav {float:left; margin:11px 0 0 15px;}
+.nav {float:left; margin:11px 0 0 15px; }
 .nav li {float:left; cursor:pointer; line-height:30px; height:27px; padding:0 12px; position:relative; margin-right:10px;}
 .nav li a {color:#DDD; font-size:13px;}
 .nav-li-hover {background-position:-10px -404px;}
@@ -146,6 +149,9 @@ a:hover {text-decoration:none; color:#000;}
 .more-link {background-position:-250px -86px; float:right; margin-top:15px; width:73px; height:26px; display:block; text-indent:-99em;}
 .more-link:hover {background-position:-328px -86px;}
 .more-link:active {background-position:-406px -86px;}
+.read-more a {background-position:-250px -86px; float:right; margin-top:15px; width:73px; height:26px; display:block; text-indent:-99em;}
+.read-more a:hover {background-position:-328px -86px;}
+.read-more a:active {background-position:-406px -86px;}
 
 /* Content style */
 .alist-content p,.post-content p {padding-bottom:20px;}
@@ -165,8 +171,3 @@ a:hover {text-decoration:none; color:#000;}
 .wordpress {float:right; width:76px; height:76px; display:block; background-position:-250px 0;}
 .wordpress:hover {background-position:-334px 0;}
 .wordpress:active {background-position:-418px 0;}
-
-/* Error page */
-.err404 {background:#F9F9F9; padding:30px; margin:50px;}
-.err404 h3 {font-size:24px; margin-bottom:20px; text-align:center;}
-.err404 p {font-size:120px; text-align:center;}
