@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<?php wp_head(); ?>
 <?php
 if (is_home() || is_page()) {
     $description = get_option('yotheme_ds');
